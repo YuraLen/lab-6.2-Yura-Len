@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        One nameOfGroupe = new One("КН-11", "КН-12с", "КН-13с");
-        Two numOfStudentsGroupe = new Two(18, 23, 20);
-        Three attendingClasses = new Three(11, 9, 8);
-        System.out.printf("В групі %s є %d студентів. З них %d відвідують пари.%n", nameOfGroupe.firstGroupe, numOfStudentsGroupe.numOfStudentsFirstGroupe, attendingClasses.numOfStudentsFirstGroupeAttandingClasses);
-        System.out.printf("В групі %s є %d студентів. З них %d відвідують пари.%n", nameOfGroupe.secondGroupe, numOfStudentsGroupe.numOfStudentsSecondGroupe, attendingClasses.numOfStudentsSecondGroupeAttandingClasses);
-        System.out.printf("В групі %s є %d студентів. З них %d відвідують пари.", nameOfGroupe.thridGroupe, numOfStudentsGroupe.numOfStudentsThirdGroupe, attendingClasses.numOfStudentsThirdGroupeAttandingClasses);
+        FirstGroup firstGroup = new FirstGroup("КН-11",  18, 11);
+        SecondGroup secondGroup = new SecondGroup("КН-12с", 23, 9);
+        ThirdGroup thirdGroup = new ThirdGroup("КН-13с", 20, 8);
+        System.out.printf("В групі %s є %d студентів. %d з них відвідують пари.%n", firstGroup.name, firstGroup.numOfStudents, firstGroup.attendingClasses);
+        System.out.printf("В групі %s є %d студентів. %d з них відвідують пари.%n", secondGroup.name, secondGroup.numOfStudents, secondGroup.attendingClasses);
+        System.out.printf("В групі %s є %d студентів. %d з них відвідують пари.", thirdGroup.name, thirdGroup.numOfStudents, thirdGroup.attendingClasses);
     }
 }
